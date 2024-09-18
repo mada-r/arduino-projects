@@ -10,6 +10,22 @@ Before running the application, ensure you have the following:
 - An LCD display connected to your computer via a serial port.
 - Arduino IDE installed to upload the sketch to your Arduino board.
 
+## Wiring Diagram
+
+To connect the LCD display to your Arduino, use the following pin layout:
+
+| LCD Pin | Arduino Pin | Description                |
+|---------|-------------|----------------------------|
+| RS      | 12          | Register Select             |
+| E       | 11          | Enable                      |
+| D4      | 5           | Data Pin 4                  |
+| D5      | 4           | Data Pin 5                  |
+| D6      | 3           | Data Pin 6                  |
+| D7      | 2           | Data Pin 7                  |
+| VSS     | GND         | Ground                     |
+| VDD     | +5V         | Power                      |
+| V0      | Potentiometer or Resistor | Contrast adjustment (optional; you can use a potentiometer for adjustable contrast or a fixed resistor) |
+
 ## Installation
 
 1. **Download the project:**
