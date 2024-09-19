@@ -26,7 +26,10 @@ def listen_serial():
                 # Check if the message "BTN_PRESS" is received
                 if serial_data == "BTN_PRESS":
                     print("Button pressed! Opening website in Opera GX private mode...")
-                    open_opera_gx_private(WEBSITE_URL)  # Open website in private mode
+                    try:
+                        open_opera_gx_private(WEBSITE_URL)  # Open website in private mode
+                    except Exception as e:
+                        print(f"Error opening website: {e}")
     except serial.SerialException as e:
         print(f"Error: {e}")
     except KeyboardInterrupt:
